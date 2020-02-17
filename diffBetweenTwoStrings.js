@@ -15,7 +15,7 @@ function diffBetweenTwoStrings(source, target) {
 
   function dp(i, j) {
     if (i === source.length || j === target.length) {
-      return target.length - 1;
+      return target.length - j;
     }
 
     if (memo[i][j] === null) {
